@@ -1,8 +1,8 @@
 public class Gladiator {
     private String _name;
     private int _ap;				// Angriffspunkte (attack points)
-    private int _pa;				// Paradefähigkeit (parry ability)
-    private int _av;				// Rüstungswert (armor value)
+    private int _pa;				// Paradefaehigkeit (parry ability)
+    private int _av;				// Ruestungswert (armor value)
     private int _hp;				// Gesundheitspunkte (health points)
     private String _status;
 
@@ -61,9 +61,9 @@ public class Gladiator {
         _hp -= damage;
 
         if(_hp <= 0) {
-            return "dead"; //Kann nicht mehr kämpfen.
+            return "dead"; //Kann nicht mehr kaempfen.
         } else if (_hp <= 5) {
-            return "ko"; //Kann nicht mehr kämpfen.
+            return "ko"; //Kann nicht mehr kaempfen.
         }
         return "";
     }

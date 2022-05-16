@@ -96,15 +96,15 @@ public class GladStat {
     public int compareTo(GladStat gl) {
         // Wenn der aktuelle Gladiator (".this") besser abschneidet, wird ein positiver int zurueckgegeben, sonst ein negativer.
 
-        if(this._winCount > gl._winCount) {							// Vergleich über Anzahl Siege
+        if(this._winCount > gl._winCount) {							// Vergleich ueber Anzahl Siege
             return 1;
         } else if(this._winCount == gl._winCount) {
-            if(this._winRate > gl._winCount) {						// Vergleich über Siegquote
+            if(this._winRate > gl._winCount) {						// Vergleich ueber Siegquote
                 return 1;
             } else if(this._winRate == gl._winCount) {
-                if(this._alive && (!gl._alive)) {						// Vergleich über Status
+                if(this._alive && (!gl._alive)) {						// Vergleich ueber Status
                     return 1;
-                } else if(this._alive && gl._alive) {					// Vergleich über Namen (lexikographisch)
+                } else if(this._alive && gl._alive) {					// Vergleich ueber Namen (lexikographisch)
                     if ((this._name).compareTo(gl._name) < 0){
                         return 1;
                     }
